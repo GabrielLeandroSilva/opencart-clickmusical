@@ -779,6 +779,8 @@ h2.price {
     border-color: #337ab7;
 }
 
+/*-------- Header ----------*/
+
 .bg-dark-custom {
 	background-color: #333333;
 	color: white;
@@ -816,7 +818,9 @@ h2.price {
 		  padding-top: 1rem;
 	}
 }
+/*==========================================*/
 
+/*--------------- Contact -----------------*/
 
 .content-contact {
 	margin-top: 1rem;
@@ -937,4 +941,62 @@ h2.price {
 	font-family: openSansBold;
 }
 		  
+/*=====================================================*/
+
+/*----------- About us* ---------------/*/
+
+.all {
+  margin-top: -0.7rem;
+}
+
+.all .container {
+  display: flex;
+}
+
+.all .container .about-banner img {
+  margin-top: 5rem;
+  border-radius: 4rem;
+  width: 40rem;
+  box-shadow: 0px 4px 6px black;
+}
+
+.all .container .about-text {
+  padding-top: 5rem;
+  padding-left: 3rem;
+  padding-bottom: 4rem;
+}
+.all .container .about-text p {
+    font-family: openSansLight;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.all .container .about-text h3 {
+    font-family: openSansBold;
+    font-size: 30px;
+}
+
+
+/*RESPONSIVO -------------------------------------------------------------------------------*/
+@media only screen and (min-width: 788px) and (max-width: 979px) {
+}
+
+@media only screen and (max-width: 787px) {
+.all {
+    display: flex;
+}
+.all .container {
+    flex-flow: wrap;
+}
+.all .container .about-banner img {   
+    width: 16rem;   
+}
+
+.all .container .about-text {
+	padding-top: 2rem;
+    padding-left: 0;
+}
+
   
+}
+
