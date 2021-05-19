@@ -66,7 +66,7 @@
  
 <div class="bg-dark-custom">
   <nav id="menu" class="navbar">
-  <a><img src="catalog/view/theme/default/image/LogoClickMusical.png" alt="LogoClickMusical"></a>
+  <a href="<?php echo $home; ?>"><img src="catalog/view/theme/default/image/LogoClickMusical.png" alt="LogoClickMusical"></a>
     <div class="navbar-header"><span id="category" class="visible-xs"></span>
       <button type="button" class="btn btn-navbar navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"><i class="fa fa-bars"></i></button>
     </div>
@@ -83,7 +83,7 @@
             <a href="" class="see-all">Promoções</a> </div>
         </li>
         <li><a href="">Blog</a></li>
-        <li><a href="">Contato</a></li>
+        <li><a href="<?php echo $contact; ?>">Contato</a></li>
       </ul>
     </div>
   </nav>

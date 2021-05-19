@@ -5,6 +5,54 @@
     <li><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a></li>
     <?php } ?>
   </ul>
+
+<div class="content-contact mt-3 mb-5">
+  <div class="title-form mb-3">
+    <h3>CONTATO</h3>
+    <div class="border-between"></div>
+  </div>
+  <div class="contact">
+    <div class="company-contact">
+      <div class="image-logo mb-3">
+        <img src="catalog/view/theme/default/image/LogoClickMusical.png" alt="LogoClickMusical">
+      </div>
+      <div class="address">
+        <p>Endereço: R. Francisco Scarpa, 95 - Centro, Sorocaba - SP.</p>
+      </div>
+      <div class="cell-number">
+        <p>(15) 3232-0502</p>
+      </div>
+    </div>
+
+    <div class="content-form">
+
+      <form class="form-contact" enctype="multipart/form-data">
+        <div class="input-contact mb-3">
+          <label>Nome</label>
+          <input type="text" placeholder="Nome">
+        </div>
+        <div class="input-contact mb-3">
+          <label>Email</label>
+          <input type="email" placeholder="Email">
+        </div>
+        <div class="input-contact mb-3">
+          <label>Nome</label>
+          <textarea class="message-input" rows="5" placeholder="Digite a mensagem..."></textarea>
+        </div>
+        <div class="button-send mb-3">
+          <button class="btn btn-send">Enviar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+
+</div>
+
+
+  <?php /*
   <div class="row"><?php echo $column_left; ?>
     <?php if ($column_left && $column_right) { ?>
     <?php $class = 'col-sm-6'; ?>
@@ -141,4 +189,6 @@
       <?php echo $content_bottom; ?></div>
     <?php echo $column_right; ?></div>
 </div>
+*/ ?>
+
 <?php echo $footer; ?>

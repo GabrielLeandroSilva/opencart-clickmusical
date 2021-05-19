@@ -1,3 +1,13 @@
+@font-face {
+	font-family: openSansBold;
+	src: url(./fonts/OpenSans-Bold.ttf);
+  }
+  
+  @font-face {
+	font-family: openSansLight;
+	src: url(./fonts/OpenSans-Light.ttf);
+  }
+
 body {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 400;
@@ -805,5 +815,126 @@ h2.price {
 	.navbar .nav-item .nav-link{
 		  padding-top: 1rem;
 	}
-  }
+}
+
+
+.content-contact {
+	margin-top: 1rem;
+	margin-bottom: 2rem;
+}
+
+
+.content-contact .title-form{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 4rem;
+	margin-bottom: 1rem;
+	font-family: openSansBold;
+}
+.content-contact .title-form .border-between{
+	border: 1px solid black;
+	width: 8rem;
+}
+  
+.content-contact .contact {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-top: 2rem;
+}
+  
+.content-contact .contact .company-contact {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 1rem;
+}
+
+.content-contact .contact .company-contact .image-logo {
+	margin-bottom: 1rem;
+}
+  
+.content-contact .contact .company-contact .image-logo img{
+	width: 12rem;
+}
+  
+.content-contact .contact .company-contact .address {
+	font-family: openSansBold;
+	text-align: center;
+}
+.content-contact .contact .company-contact .address p {
+	cursor: pointer;
+}
+
+  
+.content-contact .contact .company-contact .cell-number {
+	text-align: center;
+	font-family: openSansBold;
+}
+	  
+.content-contact .contact .content-form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 40rem;
+	padding: 1rem;
+}
+  
+  
+.content-contact .contact .content-form	.form-contact {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	border: 2px solid darkgray;
+	border-radius: 1rem;
+	padding: 1rem 0.5rem;
+	margin-bottom: 2rem;
+}
+  
+.content-contact .contact .content-form	.form-contact .input-contact {
+	display: flex;
+	flex-direction: column;
+	width: 90%;
+	margin-bottom: 1rem;
+}
+  
+.content-contact .contact .content-form	.form-contact .input-contact label {
+	margin-bottom: 0.2rem;
+	font-family: openSansBold;
+}
+  
+.content-contact .contact .content-form	.form-contact .input-contact input {
+	border-radius: 0.3rem;
+	border: 1px solid darkgray;
+	height: 2.5rem;
+	padding-left: 0.5rem;
+	font-size: 14px;
+	font-family: openSansBold;
+}
+  
+.content-contact .contact .content-form	.form-contact .input-contact .message-input {
+	resize: none;
+	padding-left: 0.5rem;
+	border-radius: 0.3rem;
+	border: 1px solid darkgray;
+	font-size: 14px;
+	font-family: openSansBold;
+}
+		  
+.content-contact .contact .content-form	.form-contact .button-send {
+	margin-bottom: 1rem;
+}  
+
+.content-contact .contact .content-form	.form-contact .button-send .btn-send{
+	border-radius: 0.6rem;
+	background-color: #333333;
+	color: white;
+	width: 10rem;
+	font-family: openSansBold;
+}
+		  
   
