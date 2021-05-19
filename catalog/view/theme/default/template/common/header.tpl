@@ -18,6 +18,9 @@
 <meta name="keywords" content= "<?php echo $keywords; ?>" />
 <?php } ?>
 <script src="catalog/view/javascript/jquery/jquery-2.1.1.min.js" type="text/javascript"></script>
+<script src="catalog/view/javascript/jquery/owl-carousel/owl.carousel.min.js" type="text/javascript"></script>
+<link href="catalog/view/javascript/jquery/owl-carousel/owl.theme.css" rel="stylesheet" type="text/css" />
+
 <link href="catalog/view/javascript/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen" />
 <script src="catalog/view/javascript/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
 <link href="catalog/view/javascript/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
@@ -72,7 +75,7 @@
     </div>
     <div class="collapse navbar-collapse navbar-ex1-collapse">
       <ul class="nav navbar-nav">
-      <li><a href="">Quem somos</a></li>
+      <li><a href="index.php?route=information/information&information_id=4">Quem somos</a></li>
         <li class="dropdown"><a href="" class="dropdown-toggle" data-toggle="dropdown">Loja Virtual</a>
           <div class="dropdown-menu">
             <div class="dropdown-inner">
@@ -82,7 +85,7 @@
             </div>
             <a href="" class="see-all">Promoções</a> </div>
         </li>
-        <li><a href="">Blog</a></li>
+        <li><a href="index.php?route=common/blog">Blog</a></li>
         <li><a href="<?php echo $contact; ?>">Contato</a></li>
       </ul>
     </div>
