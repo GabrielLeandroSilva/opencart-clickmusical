@@ -23,7 +23,7 @@
     <div class="content-footer">
 
       <div class="links-footer">
-        <span>Quem Somos</span>
+        <span onclick="location.href='index.php?route=information/information&information_id=4';">Quem Somos</span>
         <span>Informações de Entrega</span>
         <span>Políticas de Privacidade</span>
         <span>Termos e Condições</span>
@@ -35,7 +35,7 @@
             <img src="catalog/view/theme/default/image/localizacao.svg" alt="icon-marker">
           </div>
           <div class="info">
-            <p (click)="goToLink('https://www.google.com/maps/place/R.+Francisco+Scarpa,+95+-+Centro,+Sorocaba+-+SP,+18035-020/data=!4m2!3m1!1s0x94c58abb113ae6d9:0xd98c1f147648d522?sa=X&ved=2ahUKEwir4v7858bwAhW1F7kGHcm1BgMQ8gEwAHoECAMQAQ')">Endereço: R. Francisco Scarpa, 95 - Centro, Sorocaba - SP.</p>
+            <p onclick="window.open('https://www.google.com/maps/place/R.+Francisco+Scarpa,+95+-+Centro,+Sorocaba+-+SP,+18035-020/data=!4m2!3m1!1s0x94c58abb113ae6d9:0xd98c1f147648d522?sa=X&ved=2ahUKEwir4v7858bwAhW1F7kGHcm1BgMQ8gEwAHoECAMQAQ')">Endereço: R. Francisco Scarpa, 95 - Centro, Sorocaba - SP.</p>
           </div>
         </div>
         <div class="phone mb-2">
@@ -83,25 +83,21 @@
           </div>
         </div>
 
-        <!--  <div class="g-captcha mb-2">
-        <re-captcha (resolved)="resolved($event)" siteKey="6LdmycUaAAAAAMDPd3M7fhDEA57LVjzrYQz1S3Y3">
-        </re-captcha>
-      </div> -->
 
-        <!-- <div class="g-captcha mb-2"> -->
         <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-        <div class="recaptcha_el"></div>
-        <!--</div>-->
+        <div class="recaptcha_el">
+        </div>
+        
 
         <div class="social">
           <div class="social-icons">
-            <img src="catalog/view/theme/default/image/logo-facebook.svg" alt="icon-facebook">
+            <img onclick="window.open('https://www.google.com.br/')" src="catalog/view/theme/default/image/logo-facebook.svg" alt="icon-facebook">
           </div>
           <div class="social-icons">
-            <img src="catalog/view/theme/default/image/logo-whatsapp.svg" alt="icon-whatsapp">
+            <img onclick="window.open('https://www.google.com.br/')" src="catalog/view/theme/default/image/logo-whatsapp.svg" alt="icon-whatsapp">
           </div>
           <div class="social-icons">
-            <img src="catalog/view/theme/default/image/logo-instagram.svg" alt="icon-instagram">
+            <img onclick="window.open('https://www.google.com.br/')" src="catalog/view/theme/default/image/logo-instagram.svg" alt="icon-instagram">
           </div>
         </div>
       </div>
@@ -109,7 +105,7 @@
     </div>
 
     <div class="footer-make mt-4">
-      <span>© 2021 Click Musical, todos os direitos reservados. Desenvolvido por <img (click)="goToLink('https://www.makeweb.com.br/')" class="image-footer" src="catalog/view/theme/default/image/makeweb.png" alt="logo_footer"> </span>
+      <span>© 2021 Click Musical, todos os direitos reservados. Desenvolvido por <img onclick="window.open('https://www.makeweb.com.br/')" class="image-footer" src="catalog/view/theme/default/image/makeweb.png" alt="logo_footer"> </span>
     </div>
 
   </div>
