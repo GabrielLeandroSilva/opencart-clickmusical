@@ -80,66 +80,103 @@
       </div>
     </div>
 
-    <div class="container">
-      <div class="carrossel" data-slide="promocao">
-        <ul>
-          <li>
-            <div class="card-deck">
-              <div class="card">
-                <img src="catalog/view/theme/default/image/produto-exemplo.jpg" alt="">
-                <div class="card-body">
-                  <h3 class="card-title">Exemplo Produto</h3>
-                  <div class="card-text">
-                    <h4>De $500,00 <br> Por $250,00</h4>
-                    <h5>ou 12x de R$20,83</h5>
-                    <h6>Á vista R$220,00</h6>
-                  </div>
-                  <div class="btn-comprar">
-                    <button><img src="assets/images/icons/carrinho.svg"> Comprar</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="card-deck">
-              <div class="card">
-                <img src="catalog/view/theme/default/image/produto-exemplo.jpg" alt="">
-                <div class="card-body">
-                  <h3 class="card-title">Exemplo Produto</h3>
-                  <div class="card-text">
-                    <h4>De $500,00 <br> Por $250,00</h4>
-                    <h5>ou 12x de R$20,83</h5>
-                    <h6>Á vista R$220,00</h6>
-                  </div>
-                  <div class="btn-comprar">
-                    <button><img src="assets/images/icons/carrinho.svg"> Comprar</button>
-                  </div>
-                </div>
-              </div>
-            </div>
 
 
-            <div class="card-deck">
-              <div class="card">
-                <img src="catalog/view/theme/default/image/produto-exemplo.jpg" alt="">
-                <div class="card-body">
-                  <h3 class="card-title">Exemplo Produto</h3>
-                  <div class="card-text">
-                    <h4>De $500,00 <br> Por $250,00</h4>
-                    <h5>ou 12x de R$20,83</h5>
-                    <h6>Á vista R$220,00</h6>
-                  </div>
-                  <div class="btn-comprar">
-                    <button><img src="assets/images/icons/carrinho.svg"> Comprar</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </li>
-
-      </div>
-    </div>
 
   </div>
 
-  <?php echo $footer; ?>
+  <div class="container">
+    <section class="yellow-block">
+      <div class="owl-carousel1 promocao-theme">
+        <div class="row-products">
+          <div class="item">
+
+            <div class="card-deck">
+              <div class="card">
+                <img src="catalog/view/theme/default/image/produto-exemplo.jpg" alt="">
+                <div class="card-body">
+                  <h3 class="card-title">Exemplo Produto</h3>
+                  <div class="card-text">
+                    <h4>De $500,00 <br> Por $250,00</h4>
+                    <h5>ou 12x de R$20,83</h5>
+                    <h6>Á vista R$220,00</h6>
+                  </div>
+                  <div class="btn-comprar">
+                    <button><img src="catalog/view/theme/default/image/carrinho.svg"> Comprar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="item">
+
+            <div class="card-deck">
+              <div class="card">
+                <img src="catalog/view/theme/default/image/produto-exemplo.jpg" alt="">
+                <div class="card-body">
+                  <h3 class="card-title">Exemplo Produto</h3>
+                  <div class="card-text">
+                    <h4>De $500,00 <br> Por $250,00</h4>
+                    <h5>ou 12x de R$20,83</h5>
+                    <h6>Á vista R$220,00</h6>
+                  </div>
+                  <div class="btn-comprar">
+                    <button><img src="catalog/view/theme/default/image/carrinho.svg"> Comprar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="item">
+
+            <div class="card-deck">
+              <div class="card">
+                <img src="catalog/view/theme/default/image/produto-exemplo.jpg" alt="">
+                <div class="card-body">
+                  <h3 class="card-title">Exemplo Produto</h3>
+                  <div class="card-text">
+                    <h4>De $500,00 <br> Por $250,00</h4>
+                    <h5>ou 12x de R$20,83</h5>
+                    <h6>Á vista R$220,00</h6>
+                  </div>
+                  <div class="btn-comprar">
+                    <button><img src="catalog/view/theme/default/image/carrinho.svg"> Comprar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="btn-promocao">
+          <button>VEJA MAIS</button>
+        </div>
+      </div>
+
+
+    </section>
+
+  </div>
+
+</div>
+
+<?php echo $footer; ?>
+
+<script type="text/javascript">
+  $('.owl-carousel1').owlCarousel({
+    items: 1,
+    singleItem: true,
+    autoPlay: false,
+    navigation: true,
+    navigationText: ['<i class="fa fa-chevron-left fa-5x"></i>', '<i class="fa fa-chevron-right fa-5x"></i>'],
+    pagination: false,
+    lazyLoad: true,
+    slideSpeed: 300,
+    paginationSpeed: 400,
+  });
+</script>

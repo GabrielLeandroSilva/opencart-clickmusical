@@ -1536,7 +1536,7 @@ h2.price {
   border-radius: 0.5rem;
 }
 
-.card-deck {
+.item.lazyOwl .card-deck {
   display: flex;
   justify-content: center;
 }
@@ -1585,6 +1585,111 @@ h2.price {
 .card-body .card-text h6 {
   font-size: 28px;
 }
+
+.teste {
+  background-color: #145e7a;
+}
+
+.yellow-block {
+  display: block;
+  width: 100%;
+  height: 67rem;
+  padding-bottom: 32%;
+}
+
+.card-deck {
+  background-color: white;
+  padding-bottom: 2rem;
+}
+
+.all
+  .container
+  .yellow-block
+  .owl-carousel1.promocao-theme.owl-carousel.owl-theme
+  .owl-wrapper-outer
+  .owl-wrapper
+  .owl-item {
+  width: auto !important;
+  padding: 3rem 1rem 3rem 2rem !important;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.all
+  .container
+  .yellow-block
+  .owl-carousel1.promocao-theme.owl-carousel.owl-theme
+  .owl-wrapper-outer {
+  border-radius: 1rem !important;
+  border: none;
+}
+
+.all
+  .container
+  .yellow-block
+  .owl-carousel1.promocao-theme.owl-carousel.owl-theme
+  .owl-wrapper-outer
+  .owl-wrapper {
+  width: auto !important;
+  display: flex !important;
+  background-color: #f0af13;
+  justify-content: center;
+}
+
+.all
+  .container
+  .yellow-block
+  .owl-carousel1.promocao-theme.owl-carousel.owl-theme
+  .owl-wrapper-outer
+  .owl-wrapper
+  .owl-item
+  .row-products
+  .item {
+  padding-left: 2rem;
+}
+
+.all
+  .container
+  .yellow-block
+  .owl-carousel1.promocao-theme.owl-carousel.owl-theme
+  .owl-wrapper-outer
+  .owl-wrapper
+  .owl-item
+  .row-products
+  .item
+  .card-deck {
+  border-radius: 1rem;
+}
+
+.row-products {
+  display: flex;
+  flex-direction: row;
+}
+
+.btn-promocao {
+  display: flex;
+  justify-content: center;
+  padding-top: 1.5rem;
+  z-index: 0;
+}
+
+.btn-promocao button {
+  font-family: openSansBold;
+  background-color: var(--yellow-main);
+  border: 2px solid white;
+  color: white;
+  border-radius: 5px;
+  padding: 4px 30px 4px 30px;
+}
+
+.btn-promocao button:hover {
+  border-color: #000000;
+  color: #000000;
+}
+
+/*.owl-carousel1 .owl-wrapper-outer .owl-wrapper .owl-item {
+  width: auto;
+}*/
 /*=====================================================*/
 
 /*----------- FOOTER* ---------------/*/
