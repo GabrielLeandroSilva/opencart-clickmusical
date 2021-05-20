@@ -21,7 +21,10 @@
         <?php $class = 'col-sm-8'; ?>
         <?php } ?>
         <div class="<?php echo $class; ?>">
-          <?php if ($thumb || $images) { ?>
+          
+          <!-- ==================AQUI Vem A imagem!=================== -->
+
+          <!-- <?php if ($thumb || $images) { ?>
           <ul class="thumbnails">
             <?php if ($thumb) { ?>
             <li><a class="thumbnail" href="<?php echo $popup; ?>" title="<?php echo $heading_title; ?>"><img src="<?php echo $thumb; ?>" title="<?php echo $heading_title; ?>" alt="<?php echo $heading_title; ?>" /></a></li>
@@ -32,15 +35,15 @@
             <?php } ?>
             <?php } ?>
           </ul>
-          <?php } ?>
+          <?php } ?> -->
           <ul class="nav nav-tabs">
             <li class="active"><a href="#tab-description" data-toggle="tab"><?php echo $tab_description; ?></a></li>
-            <?php if ($attribute_groups) { ?>
+            <!-- <?php if ($attribute_groups) { ?>
             <li><a href="#tab-specification" data-toggle="tab"><?php echo $tab_attribute; ?></a></li>
             <?php } ?>
             <?php if ($review_status) { ?>
             <li><a href="#tab-review" data-toggle="tab"><?php echo $tab_review; ?></a></li>
-            <?php } ?>
+            <?php } ?> -->
           </ul>
           <div class="tab-content">
             <div class="tab-pane active" id="tab-description"><?php echo $description; ?></div>
@@ -65,7 +68,7 @@
               </table>
             </div>
             <?php } ?>
-            <?php if ($review_status) { ?>
+            <!-- <?php if ($review_status) { ?>
             <div class="tab-pane" id="tab-review">
               <form class="form-horizontal" id="form-review">
                 <div id="review"></div>
@@ -110,7 +113,7 @@
                 <?php } ?>
               </form>
             </div>
-            <?php } ?>
+            <?php } ?> -->
           </div>
         </div>
         <?php if ($column_left || $column_right) { ?>
@@ -119,12 +122,12 @@
         <?php $class = 'col-sm-4'; ?>
         <?php } ?>
         <div class="<?php echo $class; ?>">
-          <div class="btn-group">
+          <!-- <div class="btn-group">
             <button type="button" data-toggle="tooltip" class="btn btn-default" title="<?php echo $button_wishlist; ?>" onclick="wishlist.add('<?php echo $product_id; ?>');"><i class="fa fa-heart"></i></button>
             <button type="button" data-toggle="tooltip" class="btn btn-default" title="<?php echo $button_compare; ?>" onclick="compare.add('<?php echo $product_id; ?>');"><i class="fa fa-exchange"></i></button>
-          </div>
+          </div> -->
           <h1><?php echo $heading_title; ?></h1>
-          <ul class="list-unstyled">
+          <!-- <ul class="list-unstyled">
             <?php if ($manufacturer) { ?>
             <li><?php echo $text_manufacturer; ?> <a href="<?php echo $manufacturers; ?>"><?php echo $manufacturer; ?></a></li>
             <?php } ?>
@@ -133,39 +136,39 @@
             <li><?php echo $text_reward; ?> <?php echo $reward; ?></li>
             <?php } ?>
             <li><?php echo $text_stock; ?> <?php echo $stock; ?></li>
-          </ul>
+          </ul> -->
           <?php if ($price) { ?>
           <ul class="list-unstyled">
-            <?php if (!$special) { ?>
+            <!-- <?php if (!$special) { ?> -->
             <li>
               <h2><?php echo $price; ?></h2>
             </li>
-            <?php } else { ?>
-            <li><span style="text-decoration: line-through;"><?php echo $price; ?></span></li>
+            <!-- <?php } else { ?>
+            <li><span style="text-decoration: line-through;"><?php echo $price; ?></span></li> -->
             <li>
               <h2><?php echo $special; ?></h2>
             </li>
-            <?php } ?>
+            <!-- <?php } ?>
             <?php if ($tax) { ?>
-            <li><?php echo $text_tax; ?> <?php echo $tax; ?></li>
-            <?php } ?>
+            <li><?php echo $text_tax; ?> <?php echo $tax; ?></li> -->
+            <!-- <?php } ?>
             <?php if ($points) { ?>
-            <li><?php echo $text_points; ?> <?php echo $points; ?></li>
-            <?php } ?>
-            <?php if ($discounts) { ?>
+             <li><?php echo $text_points; ?> <?php echo $points; ?></li> -->
+             <!-- <?php } ?>
+            <?php if ($discounts) { ?>-->
             <li>
               <hr>
             </li>
-            <?php foreach ($discounts as $discount) { ?>
+            <!-- <?php foreach ($discounts as $discount) { ?>
             <li><?php echo $discount['quantity']; ?><?php echo $text_discount; ?><?php echo $discount['price']; ?></li>
             <?php } ?>
-            <?php } ?>
+            <?php } ?> -->
           </ul>
           <?php } ?>
           <div id="product">
             <?php if ($options) { ?>
             <hr>
-            <h3><?php echo $text_option; ?></h3>
+            <!-- <h3><?php echo $text_option; ?></h3>
             <?php foreach ($options as $option) { ?>
             <?php if ($option['type'] == 'select') { ?>
             <div class="form-group<?php echo ($option['required'] ? ' required' : ''); ?>">
@@ -181,8 +184,8 @@
                 <?php } ?>
               </select>
             </div>
-            <?php } ?>
-            <?php if ($option['type'] == 'radio') { ?>
+            <?php } ?> -->
+            <!-- <?php if ($option['type'] == 'radio') { ?>
             <div class="form-group<?php echo ($option['required'] ? ' required' : ''); ?>">
               <label class="control-label"><?php echo $option['name']; ?></label>
               <div id="input-option<?php echo $option['product_option_id']; ?>">
@@ -202,8 +205,8 @@
                 <?php } ?>
               </div>
             </div>
-            <?php } ?>
-            <?php if ($option['type'] == 'checkbox') { ?>
+            <?php } ?> -->
+            <!-- <?php if ($option['type'] == 'checkbox') { ?>
             <div class="form-group<?php echo ($option['required'] ? ' required' : ''); ?>">
               <label class="control-label"><?php echo $option['name']; ?></label>
               <div id="input-option<?php echo $option['product_option_id']; ?>">
@@ -223,8 +226,8 @@
                 <?php } ?>
               </div>
             </div>
-            <?php } ?>
-            <?php if ($option['type'] == 'text') { ?>
+            <?php } ?> -->
+            <!-- <?php if ($option['type'] == 'text') { ?>
             <div class="form-group<?php echo ($option['required'] ? ' required' : ''); ?>">
               <label class="control-label" for="input-option<?php echo $option['product_option_id']; ?>"><?php echo $option['name']; ?></label>
               <input type="text" name="option[<?php echo $option['product_option_id']; ?>]" value="<?php echo $option['value']; ?>" placeholder="<?php echo $option['name']; ?>" id="input-option<?php echo $option['product_option_id']; ?>" class="form-control" />
@@ -262,8 +265,8 @@
                 <button type="button" class="btn btn-default"><i class="fa fa-calendar"></i></button>
                 </span></div>
             </div>
-            <?php } ?>
-            <?php if ($option['type'] == 'time') { ?>
+            <?php } ?> -->
+            <!-- <?php if ($option['type'] == 'time') { ?>
             <div class="form-group<?php echo ($option['required'] ? ' required' : ''); ?>">
               <label class="control-label" for="input-option<?php echo $option['product_option_id']; ?>"><?php echo $option['name']; ?></label>
               <div class="input-group time">
@@ -274,10 +277,10 @@
             </div>
             <?php } ?>
             <?php } ?>
-            <?php } ?>
-            <?php if ($recurrings) { ?>
+            <?php } ?> -->
+            <!-- <?php if ($recurrings) { ?>
             <hr>
-            <h3><?php echo $text_payment_recurring; ?></h3>
+             <h3><?php echo $text_payment_recurring; ?></h3>
             <div class="form-group required">
               <select name="recurring_id" class="form-control">
                 <option value=""><?php echo $text_select; ?></option>
@@ -287,7 +290,7 @@
               </select>
               <div class="help-block" id="recurring-description"></div>
             </div>
-            <?php } ?>
+            <?php } ?> -->
             <div class="form-group">
               <label class="control-label" for="input-quantity"><?php echo $entry_qty; ?></label>
               <input type="text" name="quantity" value="<?php echo $minimum; ?>" size="2" id="input-quantity" class="form-control" />
@@ -299,7 +302,7 @@
             <div class="alert alert-info"><i class="fa fa-info-circle"></i> <?php echo $text_minimum; ?></div>
             <?php } ?>
           </div>
-          <?php if ($review_status) { ?>
+          <!-- <?php if ($review_status) { ?>
           <div class="rating">
             <p>
               <?php for ($i = 1; $i <= 5; $i++) { ?>
@@ -311,12 +314,12 @@
               <?php } ?>
               <a href="" onclick="$('a[href=\'#tab-review\']').trigger('click'); return false;"><?php echo $reviews; ?></a> / <a href="" onclick="$('a[href=\'#tab-review\']').trigger('click'); return false;"><?php echo $text_write; ?></a></p>
             <hr>
-            <!-- AddThis Button BEGIN -->
+            
             <div class="addthis_toolbox addthis_default_style" data-url="<?php echo $share; ?>"><a class="addthis_button_facebook_like" fb:like:layout="button_count"></a> <a class="addthis_button_tweet"></a> <a class="addthis_button_pinterest_pinit"></a> <a class="addthis_counter addthis_pill_style"></a></div>
             <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-515eeaf54693130e"></script>
-            <!-- AddThis Button END -->
+            
           </div>
-          <?php } ?>
+          <?php } ?> -->
         </div>
       </div>
       <?php if ($products) { ?>

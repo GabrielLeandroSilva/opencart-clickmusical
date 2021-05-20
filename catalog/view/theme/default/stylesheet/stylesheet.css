@@ -34,6 +34,8 @@ h1 {
 }
 h2 {
   font-size: 27px;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 h3 {
   font-size: 21px;
@@ -85,9 +87,15 @@ input[type="color"].form-control {
 .input-group .popover {
   font-size: 12px;
 }
+
+.input-group select {
+  height: 4rem !important;
+}
+
 .input-group .input-group-addon {
   font-size: 12px;
   height: 30px;
+  background-color: transparent;
 }
 /* Fix some bootstrap issues */
 span.hidden-xs,
@@ -635,7 +643,15 @@ footer h5 {
   border: 1px solid #ddd;
   margin-bottom: 20px;
   overflow: auto;
+  border-radius: 1.5rem;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
 }
+
+.product-thumb:hover {
+  box-shadow: 0 0 20px rgb(0 0 0 / 30%);
+}
+
 .product-thumb .image {
   text-align: center;
 }
@@ -660,7 +676,17 @@ footer h5 {
 }
 .product-thumb h4 {
   font-weight: bold;
+  text-align: center;
 }
+
+.product-thumb h4 a {
+  color: #f0af13;
+}
+
+.product-thumb h4 a:hover {
+  color: #e4951f;
+}
+
 .product-thumb .caption {
   padding: 0 20px;
   min-height: 180px;
@@ -706,6 +732,9 @@ h2.price {
 }
 .product-thumb .price {
   color: #444;
+  font-weight: bold;
+  text-align: center;
+  font-size: 16px;
 }
 .product-thumb .price-new {
   font-weight: 600;
@@ -1074,6 +1103,27 @@ h2.price {
 .all .container .about-text h3 {
   font-family: openSansBold;
   font-size: 30px;
+}
+
+/*RESPONSIVO -------------------------------------------------------------------------------*/
+@media only screen and (min-width: 788px) and (max-width: 979px) {
+}
+
+@media only screen and (max-width: 787px) {
+  .all {
+    display: flex;
+  }
+  .all .container {
+    flex-flow: wrap;
+  }
+  .all .container .about-banner img {
+    width: 16rem;
+  }
+
+  .all .container .about-text {
+    padding-top: 2rem;
+    padding-left: 0;
+  }
 }
 
 /*=============================================================*/
@@ -1768,23 +1818,27 @@ h2.price {
   cursor: pointer;
 }
 
-/*RESPONSIVO -------------------------------------------------------------------------------*/
-@media only screen and (min-width: 788px) and (max-width: 979px) {
+/*======================================================*/
+
+/*-------------- Category Card ------------*/
+
+.button-buying {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
 }
 
-@media only screen and (max-width: 787px) {
-  .all {
-    display: flex;
-  }
-  .all .container {
-    flex-flow: wrap;
-  }
-  .all .container .about-banner img {
-    width: 16rem;
-  }
-
-  .all .container .about-text {
-    padding-top: 2rem;
-    padding-left: 0;
-  }
+.button-buying .btn-buying {
+  border-radius: .7rem;
+  background-color: #333333;
+  color: white;
+  font-size: 14px;
+  font-family: openSansBold;
+  outline: none;
 }
+
+.button-buying .btn-buying:hover {
+  color: #f0af13;
+}
+
+

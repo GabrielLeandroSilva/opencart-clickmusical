@@ -80,10 +80,13 @@
           <div class="dropdown-menu">
             <div class="dropdown-inner">
               <ul class="list-unstyled">
-                <li><a href="">Destaques</a></li>
+                <li><a href="index.php?route=product/category&path=20">Violões</a></li>
+                <li><a href="index.php?route=product/category&path=20">Cordas</a></li>
+                <li><a href="index.php?route=product/category&path=20">Guitarra</a></li>
+                <li><a href="index.php?route=product/category&path=20">Bateria</a></li>
+                <li><a href="index.php?route=product/category&path=20">Contra Baixo</a></li>
               </ul>
             </div>
-            <a href="" class="see-all">Promoções</a> </div>
         </li>
         <li><a href="index.php?route=common/blog">Blog</a></li>
         <li><a href="<?php echo $contact; ?>">Contato</a></li>
@@ -104,7 +107,7 @@
 
 
 
-<?php /*
+
 <?php if ($categories) { ?>
 <div class="container">
   <nav id="menu" class="navbar">
@@ -137,5 +140,5 @@
   </nav>
 </div>
 <?php } ?>
-  */ ?>
+
 
