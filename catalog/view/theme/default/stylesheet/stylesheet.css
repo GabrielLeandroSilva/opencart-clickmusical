@@ -1946,4 +1946,72 @@ h2.price {
   color: #f0af13;
 }
 
+/*======================================================*/
+
+/*----------------- Product --------------------*/
+
+.product-easy {
+  display: flex;
+  justify-content: center;
+}
+
+.product-easy .easyzoom{
+  display: inline-block;
+}
+
+.product-easy .easyzoom img {
+  vertical-align: bottom;
+}
+
+.form-group {
+  padding: 2rem;
+}
+
+.form-group .input-quantity-background {
+  position: relative;
+  display: flex;
+}
+
+.form-group .input-quantity-background .qtd-minus {
+    position: absolute;
+    bottom: .2rem;
+    left: 0.3rem;
+    background-color: transparent;
+    border: 0px;
+}
+
+.form-group .input-quantity-background .qtd-plus {
+    position: absolute;
+    bottom: 0.4rem;
+    background-color: transparent;
+    border: 0px;
+    left: 8.4rem;
+}
+
+.form-group .input-quantity-background .qtd-plus i, .form-group .input-quantity-background .qtd-minus i {
+  font-size: 20px;
+}
+
+#input-quantity {
+  width: 11rem;
+  padding-left: 2rem;
+  text-align: center;
+  padding-right: 2rem;
+  pointer-events: none;
+}
+
+.form-group .btn-primary-to-buy {
+  background-color: #333333;
+  color: white;
+}
+
+.form-group .background-cep {
+  display: flex;
+}
+
+.form-group .background-cep .btn-cep {
+  background-color: #333333;
+  color: white;
+}
+
 

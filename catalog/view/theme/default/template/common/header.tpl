@@ -18,6 +18,10 @@
 <meta name="keywords" content= "<?php echo $keywords; ?>" />
 <?php } ?>
 <script src="catalog/view/javascript/jquery/jquery-2.1.1.min.js" type="text/javascript"></script>
+<script src="catalog/view/theme/default/Js/easyzoom.js" type="text/javascript"></script>
+<link href="catalog/view/theme/default/Js/easyzoom.css" rel="stylesheet" type="text/css" />
+<script src="catalog/view/theme/default/Js/jquery.mask.js" type="text/javascript"></script>
+
 <script src="catalog/view/javascript/jquery/owl-carousel/owl.carousel.min.js" type="text/javascript"></script>
 <link href="catalog/view/javascript/jquery/owl-carousel/owl.theme.css" rel="stylesheet" type="text/css" />
 
@@ -81,10 +85,10 @@
             <div class="dropdown-inner">
               <ul class="list-unstyled">
                 <li><a href="index.php?route=product/category&path=20">Violões</a></li>
-                <li><a href="index.php?route=product/category&path=20">Cordas</a></li>
+                <li><a href="index.php?route=product/category&path=24">Cordas</a></li>
                 <li><a href="index.php?route=product/category&path=20">Guitarra</a></li>
-                <li><a href="index.php?route=product/category&path=20">Bateria</a></li>
-                <li><a href="index.php?route=product/category&path=20">Contra Baixo</a></li>
+                <li><a href="index.php?route=product/category&path=27">Bateria</a></li>
+                <li><a href="index.php?route=product/category&path=33">Contra Baixo</a></li>
               </ul>
             </div>
         </li>
@@ -108,7 +112,7 @@
 
 
 
-<?php if ($categories) { ?>
+<!-- <?php if ($categories) { ?>
 <div class="container">
   <nav id="menu" class="navbar">
     <div class="navbar-header"><span id="category" class="visible-xs"><?php echo $text_category; ?></span>
@@ -139,6 +143,6 @@
     </div>
   </nav>
 </div>
-<?php } ?>
+<?php } ?> -->
 
 

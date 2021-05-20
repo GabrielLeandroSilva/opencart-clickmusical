@@ -24,6 +24,18 @@
           
           <!-- ==================AQUI Vem A imagem!=================== -->
 
+          <div class="product-easy">
+
+            <div class="easyzoom">
+              <ul class="thumbnails">
+                <li><a class="thumbnail" href="<?php echo $popup; ?>" title="<?php echo $heading_title; ?>"><img src="<?php echo $thumb; ?>" title="<?php echo $heading_title; ?>" alt="<?php echo $heading_title; ?>" /></a></li>
+                <?php foreach ($images as $image) { ?>
+                  <li class="image-additional"><a class="thumbnail" href="<?php echo $image['popup']; ?>" title="<?php echo $heading_title; ?>"> <img src="<?php echo $image['thumb']; ?>" title="<?php echo $heading_title; ?>" alt="<?php echo $heading_title; ?>" /></a></li>
+                  <?php } ?>
+              </ul>
+            </div>
+          </div>
+
           <!-- <?php if ($thumb || $images) { ?>
           <ul class="thumbnails">
             <?php if ($thumb) { ?>
@@ -37,7 +49,7 @@
           </ul>
           <?php } ?> -->
           <ul class="nav nav-tabs">
-            <li class="active"><a href="#tab-description" data-toggle="tab"><?php echo $tab_description; ?></a></li>
+            <li class="active"><a data-toggle="tab"><?php echo $tab_description; ?></a></li>
             <!-- <?php if ($attribute_groups) { ?>
             <li><a href="#tab-specification" data-toggle="tab"><?php echo $tab_attribute; ?></a></li>
             <?php } ?>
@@ -160,9 +172,9 @@
               <hr>
             </li>
             <!-- <?php foreach ($discounts as $discount) { ?>
-            <li><?php echo $discount['quantity']; ?><?php echo $text_discount; ?><?php echo $discount['price']; ?></li>
+            <li><?php echo $discount['quantity']; ?><?php echo $text_discount; ?><?php echo $discount['price']; ?></li> -->
             <?php } ?>
-            <?php } ?> -->
+            <?php } ?> 
           </ul>
           <?php } ?>
           <div id="product">
@@ -292,11 +304,20 @@
             </div>
             <?php } ?> -->
             <div class="form-group">
-              <label class="control-label" for="input-quantity"><?php echo $entry_qty; ?></label>
-              <input type="text" name="quantity" value="<?php echo $minimum; ?>" size="2" id="input-quantity" class="form-control" />
-              <input type="hidden" name="product_id" value="<?php echo $product_id; ?>" />
+              <label class="control-label" for="input-quantity">Quantidade</label>
+              <div class="input-quantity-background">
+                <button class="qtd-minus"><i class="fa fa-angle-down"></i></button>
+                <button class="qtd-plus"><i class="fa fa-angle-up"></i></button>
+                <input type="text" name="quantity" value="<?php echo $minimum; ?>" size="2" id="input-quantity" class="form-control" />
+              </div>
               <br />
-              <button type="button" id="button-cart" data-loading-text="<?php echo $text_loading; ?>" class="btn btn-primary btn-lg btn-block"><?php echo $button_cart; ?></button>
+              <button type="button" id="button-cart" data-loading-text="<?php echo $text_loading; ?>" class="btn btn-primary-to-buy btn-lg btn-block">Adicionar ao Carrinho</button>
+              <hr>
+              <label for="input-cep">Calcular Frete</label>
+              <div class="background-cep">
+                <input type="text" name="cep" value="" size="2" id="input-cep" class="form-control cep-field" />
+                <button class="btn btn-cep">Calcular</button>
+              </div>
             </div>
             <?php if ($minimum > 1) { ?>
             <div class="alert alert-info"><i class="fa fa-info-circle"></i> <?php echo $text_minimum; ?></div>
@@ -322,7 +343,7 @@
           <?php } ?> -->
         </div>
       </div>
-      <?php if ($products) { ?>
+      <!-- <?php if ($products) { ?>
       <h3><?php echo $text_related; ?></h3>
       <div class="row">
         <?php $i = 0; ?>
@@ -341,7 +362,7 @@
               <h4><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a></h4>
               <p><?php echo $product['description']; ?></p>
               <?php if ($product['rating']) { ?>
-              <div class="rating">
+               <div class="rating">
                 <?php for ($j = 1; $j <= 5; $j++) { ?>
                 <?php if ($product['rating'] < $j) { ?>
                 <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i></span>
@@ -349,7 +370,7 @@
                 <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
                 <?php } ?>
                 <?php } ?>
-              </div>
+              </div> 
               <?php } ?>
               <?php if ($product['price']) { ?>
               <p class="price">
@@ -366,8 +387,8 @@
             </div>
             <div class="button-group">
               <button type="button" onclick="cart.add('<?php echo $product['product_id']; ?>', '<?php echo $product['minimum']; ?>');"><span class="hidden-xs hidden-sm hidden-md"><?php echo $button_cart; ?></span> <i class="fa fa-shopping-cart"></i></button>
-              <button type="button" data-toggle="tooltip" title="<?php echo $button_wishlist; ?>" onclick="wishlist.add('<?php echo $product['product_id']; ?>');"><i class="fa fa-heart"></i></button>
-              <button type="button" data-toggle="tooltip" title="<?php echo $button_compare; ?>" onclick="compare.add('<?php echo $product['product_id']; ?>');"><i class="fa fa-exchange"></i></button>
+               <button type="button" data-toggle="tooltip" title="<?php echo $button_wishlist; ?>" onclick="wishlist.add('<?php echo $product['product_id']; ?>');"><i class="fa fa-heart"></i></button>
+              <button type="button" data-toggle="tooltip" title="<?php echo $button_compare; ?>" onclick="compare.add('<?php echo $product['product_id']; ?>');"><i class="fa fa-exchange"></i></button> 
             </div>
           </div>
         </div>
@@ -381,7 +402,7 @@
         <?php $i++; ?>
         <?php } ?>
       </div>
-      <?php } ?>
+      <?php } ?> -->
       <?php if ($tags) { ?>
       <p><?php echo $text_tags; ?>
         <?php for ($i = 0; $i < count($tags); $i++) { ?>
@@ -396,7 +417,7 @@
       <?php echo $content_bottom; ?></div>
     <?php echo $column_right; ?></div>
 </div>
-<script type="text/javascript"><!--
+<script type="text/javascript">
 $('select[name=\'recurring_id\'], input[name="quantity"]').change(function(){
 	$.ajax({
 		url: 'index.php?route=product/product/getRecurringDescription',
@@ -415,8 +436,8 @@ $('select[name=\'recurring_id\'], input[name="quantity"]').change(function(){
 		}
 	});
 });
-//--></script>
-<script type="text/javascript"><!--
+</script>
+<script type="text/javascript">
 $('#button-cart').on('click', function() {
 	$.ajax({
 		url: 'index.php?route=checkout/cart/add',
@@ -469,8 +490,8 @@ $('#button-cart').on('click', function() {
         }
 	});
 });
-//--></script>
-<script type="text/javascript"><!--
+</script>
+<script type="text/javascript">
 $('.date').datetimepicker({
 	pickTime: false
 });
@@ -535,8 +556,8 @@ $('button[id^=\'button-upload\']').on('click', function() {
 		}
 	}, 500);
 });
-//--></script>
-<script type="text/javascript"><!--
+</script>
+<script type="text/javascript">
 $('#review').delegate('.pagination a', 'click', function(e) {
     e.preventDefault();
 
@@ -589,4 +610,49 @@ $(document).ready(function() {
 	});
 });
 //--></script>
+
+<script type="text/javascript">
+$('.easyzoom').easyZoom();
+</script>
+
+<script type="text/javascript">
+$('.qtd-plus').click(function(){
+ document.getElementById('input-quantity').value++;
+});
+
+$('.qtd-minus').click(function(){
+  if(document.getElementById('input-quantity').value > 1) {
+    document.getElementById('input-quantity').value--;
+  }
+});
+
+</script>
+
+<script type="text/javascript">
+  /**
+     * jQuery Masks
+     */
+     var SPMaskBehavior = function(val) {
+        return val.replace(/\D/g, "").length === 11 ?
+            "(00) 00000-0000" :
+            "(00) 0000-00009";
+    },
+    spOptions = {
+        onKeyPress: function(val, e, field, options) {
+            field.mask(SPMaskBehavior.apply({}, arguments), options);
+        }
+    };
+    $(".cel-field").mask(SPMaskBehavior, spOptions);
+    $('.tel-field').mask('(00) 0000-0000');
+    $(".cpf-field").mask('000.000.000-00');
+    $(".cnpj-field").mask('00.000.000/0000-00');
+    $(".cep-field").mask('00000-000');
+    $('.cep-field').blur(function() {
+        var cep = $(this).val();
+        getAddress(cep, $(this).closest('fieldset'));
+    });
+</script>
+
+
+
 <?php echo $footer; ?>
