@@ -1,4 +1,11 @@
 <?php echo $header; ?>
+
+<style type="text/css">
+  #top {
+    display: none;
+  }
+</style>
+
 <div class="container">
   <ul class="breadcrumb">
     <li><a href="index.php?route=common/home">Home</a></li>

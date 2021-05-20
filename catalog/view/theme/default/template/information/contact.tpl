@@ -1,9 +1,15 @@
 <?php echo $header; ?>
+
+<style type="text/css">
+  #top {
+    display: none;
+  }
+</style>
+
 <div class="container">
   <ul class="breadcrumb">
-    <?php foreach ($breadcrumbs as $breadcrumb) { ?>
-    <li><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a></li>
-    <?php } ?>
+    <li><a href="index.php?route=common/home">Home</a></li>
+    <li class="active">Contato</li>
   </ul>
 
 <div class="content-contact mt-3 mb-5">
