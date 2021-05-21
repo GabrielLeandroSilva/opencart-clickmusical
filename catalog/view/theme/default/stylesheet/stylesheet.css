@@ -1610,7 +1610,7 @@ h2.price {
   .owl-wrapper
   .owl-item {
   width: auto !important;
-  padding: 3rem 1rem 3rem 2rem !important;
+  padding: 3rem 1rem 9rem 2rem !important;
   display: flex;
   flex-direction: column-reverse;
 }
@@ -1669,15 +1669,16 @@ h2.price {
 .btn-promocao {
   display: flex;
   justify-content: center;
-  padding-top: 1.5rem;
-  z-index: 0;
+  margin-top: -8rem;
+  z-index: 2;
+  position: relative;
 }
 
 .btn-promocao button {
   font-family: openSansBold;
   background-color: var(--yellow-main);
-  border: 2px solid white;
-  color: white;
+  border: 2px solid #ffff;
+  color: #ffff;
   border-radius: 5px;
   padding: 4px 30px 4px 30px;
 }
@@ -1687,12 +1688,86 @@ h2.price {
   color: #000000;
 }
 
+.destaque {
+  padding-bottom: 5rem;
+}
+
+.destaque .card-white-risco {
+  padding-top: 10rem;
+}
+
+.destaque h3 {
+  padding-top: 8rem;
+  text-align: center;
+  font-family: openSansBold;
+  font-size: 30px;
+}
+
+.destaque .destaque-risco {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 0.1rem;
+  background: black;
+  margin: 6px auto 8px auto;
+}
+
+.destaque .destaque-risco-above {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 0.1rem;
+  background: black;
+  margin: 6px auto 8px auto;
+}
+
+.destaque .white-block {
+  padding-left: 8rem;
+  padding-right: 8rem;
+  margin-top: 2rem;
+  border-radius: 10px;
+  height: 38.5rem;
+}
+
+.destaque .btn-destaque {
+  padding-top: 5rem;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 3rem;
+}
+
+.destaque .btn-destaque button {
+  font-family: openSansBold;
+  color: black;
+  border: 2px solid black;
+  background-color: white;
+  border-radius: 5px;
+  padding: 4px 30px 4px 30px;
+}
+
+.destaque .btn-destaque button:hover {
+  font-family: openSansBold;
+  color: #f0af13;
+  border: 2px solid #f0af13;
+  background-color: white;
+  border-radius: 5px;
+  padding: 4px 30px 4px 30px;
+}
+
+.destaque .slide-content {
+  display: flex;
+}
+
 /*.owl-carousel1 .owl-wrapper-outer .owl-wrapper .owl-item {
   width: auto;
 }*/
 /*=====================================================*/
 
 /*----------- FOOTER* ---------------/*/
+
+footer {
+  margin-top: 246px;
+}
 
 .recaptcha_el iframe {
   display: flex;
@@ -1934,7 +2009,7 @@ h2.price {
 }
 
 .button-buying .btn-buying {
-  border-radius: .7rem;
+  border-radius: 0.7rem;
   background-color: #333333;
   color: white;
   font-size: 14px;
@@ -1955,7 +2030,7 @@ h2.price {
   justify-content: center;
 }
 
-.product-easy .easyzoom{
+.product-easy .easyzoom {
   display: inline-block;
 }
 
@@ -1973,22 +2048,23 @@ h2.price {
 }
 
 .form-group .input-quantity-background .qtd-minus {
-    position: absolute;
-    bottom: .2rem;
-    left: 0.3rem;
-    background-color: transparent;
-    border: 0px;
+  position: absolute;
+  bottom: 0.2rem;
+  left: 0.3rem;
+  background-color: transparent;
+  border: 0px;
 }
 
 .form-group .input-quantity-background .qtd-plus {
-    position: absolute;
-    bottom: 0.4rem;
-    background-color: transparent;
-    border: 0px;
-    left: 8.4rem;
+  position: absolute;
+  bottom: 0.4rem;
+  background-color: transparent;
+  border: 0px;
+  left: 8.4rem;
 }
 
-.form-group .input-quantity-background .qtd-plus i, .form-group .input-quantity-background .qtd-minus i {
+.form-group .input-quantity-background .qtd-plus i,
+.form-group .input-quantity-background .qtd-minus i {
   font-size: 20px;
 }
 
@@ -2013,5 +2089,3 @@ h2.price {
   background-color: #333333;
   color: white;
 }
-
-
