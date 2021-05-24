@@ -1540,15 +1540,26 @@ h2.price {
   display: flex;
   justify-content: center;
 }
+.card-body{
+  padding-left: 3rem;
+}
 
 .card-deck img {
   width: 25rem;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.card-deck .card .img-produto{
+ display: block;
+
 }
 
 .card-body .btn-comprar {
   padding-top: 1rem;
   display: flex;
-  justify-content: center;
+  padding-left: 6rem;
 }
 
 .card-body button {
@@ -1595,6 +1606,9 @@ h2.price {
   width: 100%;
   height: 67rem;
   padding-bottom: 32%;
+  background-color: #f0af13;
+  border-radius: 1rem !important;
+  padding: 2rem;
 }
 
 .card-deck {
@@ -1606,34 +1620,15 @@ h2.price {
   .container
   .yellow-block
   .owl-carousel1.promocao-theme.owl-carousel.owl-theme
-  .owl-wrapper-outer
-  .owl-wrapper
-  .owl-item {
-  width: auto !important;
-  padding: 3rem 1rem 9rem 2rem !important;
-  display: flex;
-  flex-direction: column-reverse;
-}
-
-.all
-  .container
-  .yellow-block
-  .owl-carousel1.promocao-theme.owl-carousel.owl-theme
   .owl-wrapper-outer {
-  border-radius: 1rem !important;
   border: none;
 }
 
 .all
   .container
   .yellow-block
-  .owl-carousel1.promocao-theme.owl-carousel.owl-theme
-  .owl-wrapper-outer
-  .owl-wrapper {
-  width: auto !important;
-  display: flex !important;
+  .owl-carousel1.promocao-theme.owl-carousel.owl-theme{
   background-color: #f0af13;
-  justify-content: center;
 }
 
 .all
@@ -1643,7 +1638,6 @@ h2.price {
   .owl-wrapper-outer
   .owl-wrapper
   .owl-item
-  .row-products
   .item {
   padding-left: 2rem;
 }
@@ -1654,17 +1648,9 @@ h2.price {
   .owl-carousel1.promocao-theme.owl-carousel.owl-theme
   .owl-wrapper-outer
   .owl-wrapper
-  .owl-item
-  .row-products
-  .item
-  .card-deck {
-  border-radius: 1rem;
-}
-
-.row-products {
-  display: flex;
-  flex-direction: row;
-}
+  .owl-item{
+    width: initial;
+  }
 
 .btn-promocao {
   display: flex;
@@ -1698,9 +1684,12 @@ h2.price {
 
 .destaque h3 {
   padding-top: 8rem;
-  text-align: center;
   font-family: openSansBold;
   font-size: 30px;
+}
+
+.destaque .tittle-destaque{
+ text-align: center;
 }
 
 .destaque .destaque-risco {
@@ -1730,7 +1719,7 @@ h2.price {
 }
 
 .destaque .btn-destaque {
-  padding-top: 5rem;
+  padding-top: 25rem;
   display: flex;
   justify-content: center;
   padding-bottom: 3rem;
