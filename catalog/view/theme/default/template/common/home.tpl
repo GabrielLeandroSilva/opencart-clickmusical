@@ -7,7 +7,7 @@
 </style>
 
 
-<div class="row">
+<!-- <div class="row">
   <?php echo $column_left; ?>
   <?php if ($column_left && $column_right) { ?>
   <?php $class = 'col-sm-6'; ?>
@@ -21,7 +21,7 @@
     <?php echo $content_bottom; ?>
   </div>
   <?php echo $column_right; ?>
-</div>
+</div>-->
 
 
 
@@ -35,11 +35,11 @@
       </div>
 
       <div class="item">
-        <img src="catalog/view/theme/default/image/baixoBanner.jpg" alt=" Banner Baixo">
+        <img src="catalog/view/theme/default/image/baixoBanner.png" alt=" Banner Baixo">
       </div>
 
       <div class="item">
-        <img src="catalog/view/theme/default/image/amplificadorBanner.jpg" alt="Banner Amplificador">
+        <img src="catalog/view/theme/default/image/amplificadorBanner.png" alt="Banner Amplificador">
       </div>
   </section>
 
@@ -79,11 +79,11 @@
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </p>
+        <div class="btn-about">
+          <a href="index.php?route=information/information&information_id=4"><button>VEJA MAIS</button></a>
+        </div>
+      </div>
 
-      </div>
-      <div class="btn-about">
-        <a href="index.php?route=information/information&information_id=4"><button>VEJA MAIS</button></a>
-      </div>
     </div>
   </div>
 
@@ -258,177 +258,178 @@
     <h3 class="tittle-destaque">DESTAQUES</h3>
     <div class="destaque-risco"></div>
 
-    <div class="white-block">
-      <div class="owl-carousel2 destaque-theme">
+    <div class="container">
+      <div class="white-block">
+        <div class="owl-carousel2 destaque-theme">
 
-        <div class="item">
+          <div class="item">
 
-          <div class="card-deck">
-            <div class="card">
-              <div class="img-produto">
-                <img src="catalog/view/theme/default/image/produto2-exemplo.jpeg" alt="">
-              </div>
-              <div class="card-body">
-                <h3 class="card-title">Exemplo Produto</h3>
-                <div class="card-text">
-                  <h4>De $500,00 <br> Por $250,00</h4>
-                  <h5>ou 12x de R$20,83</h5>
-                  <h6>Á vista R$220,00</h6>
-                </div>
-                <div class="btn-comprar">
-                  <a href="index.php?route=product/product&path=20&product_id=30"><button><img src="catalog/view/theme/default/image/carrinho.svg"> Comprar</button></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="item">
-
-          <div class="card-deck">
-            <div class="card">
-              <div class="img-produto">
-                <img src="catalog/view/theme/default/image/produto2-exemplo.jpeg" alt="">
-              </div>
-              <div class="card-body">
-                <h3 class="card-title">Exemplo Produto</h3>
-                <div class="card-text">
-                  <h4>De $500,00 <br> Por $250,00</h4>
-                  <h5>ou 12x de R$20,83</h5>
-                  <h6>Á vista R$220,00</h6>
-                </div>
-                <div class="btn-comprar">
-                  <a href="index.php?route=product/product&path=20&product_id=30"><button><img src="catalog/view/theme/default/image/carrinho.svg"> Comprar</button></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="item">
-
-          <div class="card-deck">
-            <div class="card">
-              <div class="img-produto">
-                <img src="catalog/view/theme/default/image/produto2-exemplo.jpeg" alt="">
-              </div>
-              <div class="card-body">
-                <h3 class="card-title">Exemplo Produto</h3>
-                <div class="card-text">
-                  <h4>De $500,00 <br> Por $250,00</h4>
-                  <h5>ou 12x de R$20,83</h5>
-                  <h6>Á vista R$220,00</h6>
-                </div>
-                <div class="btn-comprar">
-                  <a href="index.php?route=product/product&path=20&product_id=30"><button><img src="catalog/view/theme/default/image/carrinho.svg"> Comprar</button></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-
-        <div class="item">
-
-          <div class="card-deck">
-            <div class="card">
-              <div class="img-produto">
-                <img src="catalog/view/theme/default/image/produto2-exemplo.jpeg" alt="">
-              </div>
-              <div class="card-body">
-                <h3 class="card-title">Exemplo Produto</h3>
-                <div class="card-text">
-                  <h4>De $500,00 <br> Por $250,00</h4>
-                  <h5>ou 12x de R$20,83</h5>
-                  <h6>Á vista R$220,00</h6>
-                </div>
-                <div class="btn-comprar">
-                  <a href="index.php?route=product/product&path=20&product_id=30"><button><img src="catalog/view/theme/default/image/carrinho.svg"> Comprar</button></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="item">
-
-          <div class="card-deck">
-            <div class="card">
-              <div class="img-produto">
-                <img src="catalog/view/theme/default/image/produto2-exemplo.jpeg" alt="">
-              </div>
-              <div class="card-body">
-                <h3 class="card-title">Exemplo Produto</h3>
-                <div class="card-text">
-                  <h4>De $500,00 <br> Por $250,00</h4>
-                  <h5>ou 12x de R$20,83</h5>
-                  <h6>Á vista R$220,00</h6>
-                </div>
-                <div class="btn-comprar">
-                  <a href="index.php?route=product/product&path=20&product_id=30"><button><img src="catalog/view/theme/default/image/carrinho.svg"> Comprar</button></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="item">
-
-          <div class="card-deck">
-            <div class="card">
-              <div class="img-produto">
-                <img src="catalog/view/theme/default/image/produto2-exemplo.jpeg" alt="">
-              </div>
-              <div class="card-body">
-                <h3 class="card-title">Exemplo Produto</h3>
-                <div class="card-text">
-                  <h4>De $500,00 <br> Por $250,00</h4>
-                  <h5>ou 12x de R$20,83</h5>
-                  <h6>Á vista R$220,00</h6>
-                </div>
-                <div class="btn-comprar">
-                  <a href="index.php?route=product/product&path=20&product_id=30"><button><img src="catalog/view/theme/default/image/carrinho.svg"> Comprar</button></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="item">
-
-          <div class="card-deck">
-            <div class="card">
-              <div class="img-produto">
+            <div class="card-deck">
+              <div class="card">
                 <div class="img-produto">
                   <img src="catalog/view/theme/default/image/produto2-exemplo.jpeg" alt="">
                 </div>
-              </div>
-              <div class="card-body">
-                <h3 class="card-title">Exemplo Produto</h3>
-                <div class="card-text">
-                  <h4>De $500,00 <br> Por $250,00</h4>
-                  <h5>ou 12x de R$20,83</h5>
-                  <h6>Á vista R$220,00</h6>
-                </div>
-                <div class="btn-comprar">
-                  <a href="index.php?route=product/product&path=20&product_id=30"><button><img src="catalog/view/theme/default/image/carrinho.svg"> Comprar</button></a>
+                <div class="card-body">
+                  <h3 class="card-title">Exemplo Produto</h3>
+                  <div class="card-text">
+                    <h4>De $500,00 <br> Por $250,00</h4>
+                    <h5>ou 12x de R$20,83</h5>
+                    <h6>Á vista R$220,00</h6>
+                  </div>
+                  <div class="btn-comprar">
+                    <a href="index.php?route=product/product&path=20&product_id=30"><button><img src="catalog/view/theme/default/image/carrinho.svg"> Comprar</button></a>
+                  </div>
                 </div>
               </div>
             </div>
+
           </div>
 
+          <div class="item">
+
+            <div class="card-deck">
+              <div class="card">
+                <div class="img-produto">
+                  <img src="catalog/view/theme/default/image/produto2-exemplo.jpeg" alt="">
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title">Exemplo Produto</h3>
+                  <div class="card-text">
+                    <h4>De $500,00 <br> Por $250,00</h4>
+                    <h5>ou 12x de R$20,83</h5>
+                    <h6>Á vista R$220,00</h6>
+                  </div>
+                  <div class="btn-comprar">
+                    <a href="index.php?route=product/product&path=20&product_id=30"><button><img src="catalog/view/theme/default/image/carrinho.svg"> Comprar</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="item">
+
+            <div class="card-deck">
+              <div class="card">
+                <div class="img-produto">
+                  <img src="catalog/view/theme/default/image/produto2-exemplo.jpeg" alt="">
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title">Exemplo Produto</h3>
+                  <div class="card-text">
+                    <h4>De $500,00 <br> Por $250,00</h4>
+                    <h5>ou 12x de R$20,83</h5>
+                    <h6>Á vista R$220,00</h6>
+                  </div>
+                  <div class="btn-comprar">
+                    <a href="index.php?route=product/product&path=20&product_id=30"><button><img src="catalog/view/theme/default/image/carrinho.svg"> Comprar</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+
+          <div class="item">
+
+            <div class="card-deck">
+              <div class="card">
+                <div class="img-produto">
+                  <img src="catalog/view/theme/default/image/produto2-exemplo.jpeg" alt="">
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title">Exemplo Produto</h3>
+                  <div class="card-text">
+                    <h4>De $500,00 <br> Por $250,00</h4>
+                    <h5>ou 12x de R$20,83</h5>
+                    <h6>Á vista R$220,00</h6>
+                  </div>
+                  <div class="btn-comprar">
+                    <a href="index.php?route=product/product&path=20&product_id=30"><button><img src="catalog/view/theme/default/image/carrinho.svg"> Comprar</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="item">
+
+            <div class="card-deck">
+              <div class="card">
+                <div class="img-produto">
+                  <img src="catalog/view/theme/default/image/produto2-exemplo.jpeg" alt="">
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title">Exemplo Produto</h3>
+                  <div class="card-text">
+                    <h4>De $500,00 <br> Por $250,00</h4>
+                    <h5>ou 12x de R$20,83</h5>
+                    <h6>Á vista R$220,00</h6>
+                  </div>
+                  <div class="btn-comprar">
+                    <a href="index.php?route=product/product&path=20&product_id=30"><button><img src="catalog/view/theme/default/image/carrinho.svg"> Comprar</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="item">
+
+            <div class="card-deck">
+              <div class="card">
+                <div class="img-produto">
+                  <img src="catalog/view/theme/default/image/produto2-exemplo.jpeg" alt="">
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title">Exemplo Produto</h3>
+                  <div class="card-text">
+                    <h4>De $500,00 <br> Por $250,00</h4>
+                    <h5>ou 12x de R$20,83</h5>
+                    <h6>Á vista R$220,00</h6>
+                  </div>
+                  <div class="btn-comprar">
+                    <a href="index.php?route=product/product&path=20&product_id=30"><button><img src="catalog/view/theme/default/image/carrinho.svg"> Comprar</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="item">
+
+            <div class="card-deck">
+              <div class="card">
+                <div class="img-produto">
+                  <div class="img-produto">
+                    <img src="catalog/view/theme/default/image/produto2-exemplo.jpeg" alt="">
+                  </div>
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title">Exemplo Produto</h3>
+                  <div class="card-text">
+                    <h4>De $500,00 <br> Por $250,00</h4>
+                    <h5>ou 12x de R$20,83</h5>
+                    <h6>Á vista R$220,00</h6>
+                  </div>
+                  <div class="btn-comprar">
+                    <a href="index.php?route=product/product&path=20&product_id=30"><button><img src="catalog/view/theme/default/image/carrinho.svg"> Comprar</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
         </div>
+
+
       </div>
-
-
     </div>
-
 
     <div class="btn-destaque">
       <a href="index.php?route=product/category&path=20"><button>VEJA MAIS</button></a>
@@ -455,15 +456,16 @@
     pagination: true,
     slideSpeed: 300,
     paginationSpeed: 400,
+    responsive: true,
   });
 </script>
 
 <script type="text/javascript">
   $('.owl-carousel1').owlCarousel({
     items: 3,
-    autoPlay: false,
+    autoPlay: true,
     navigation: true,
-    navigationText: ['<i class="fa fa-chevron-left fa-5x"></i>', '<i class="fa fa-chevron-right fa-5x"></i>'],
+    navigationText: ['<img src="catalog/view/theme/default/image/seta-branca-esquerda.png"> ', '<img src="catalog/view/theme/default/image/seta-branca-direita.png">'],
     pagination: false,
     slideSpeed: 300,
     paginationSpeed: 400,
@@ -473,9 +475,8 @@
 <script type="text/javascript">
   $('.owl-carousel2').owlCarousel({
     items: 4,
-    autoPlay: false,
-    navigation: true,
-    navigationText: ['<i class="fa fa-chevron-left fa-5x"></i>', '<i class="fa fa-chevron-right fa-5x"></i>'],
+    autoPlay: true,
+    navigation: false,
     pagination: false,
     slideSpeed: 300,
     paginationSpeed: 400,

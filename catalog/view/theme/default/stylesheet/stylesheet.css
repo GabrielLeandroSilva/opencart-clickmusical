@@ -1115,6 +1115,10 @@ h2.price {
 
 /*RESPONSIVO -------------------------------------------------------------------------------*/
 @media only screen and (min-width: 788px) and (max-width: 979px) {
+  .all .container {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 @media only screen and (max-width: 787px) {
@@ -1125,6 +1129,11 @@ h2.price {
   .all .container .about-text {
     padding-top: 2rem;
     padding-left: 0;
+  }
+
+  .all .container {
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -1151,7 +1160,7 @@ h2.price {
   display: block;
   width: 100%;
   height: 0;
-  padding-bottom: 50%;
+  padding-bottom: 39%;
   position: relative;
   background-size: contain;
   background-repeat: no-repeat;
@@ -1414,6 +1423,17 @@ h2.price {
 .all
   .main-banner
   .owl-carousel.owl-theme
+  .owl-wrapper-outer
+  .owl-wrapper
+  .owl-item
+  .item
+  img {
+  max-width: 100%;
+}
+
+.all
+  .main-banner
+  .owl-carousel.owl-theme
   .owl-controls.clickable
   .owl-pagination
   .owl-page.owl-page.active
@@ -1489,10 +1509,6 @@ h2.price {
   border: 3px solid white;
   box-shadow: inset 0 1px 1px #000000, inset 0 -1px 1px black;
   display: flex;
-}
-
-.all .container:nth-child(1) {
-  display: revert;
 }
 
 .about-us img {
@@ -1577,7 +1593,9 @@ h2.price {
   justify-content: center;
 }
 .card-body {
-  padding-left: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
 }
 
 .card-deck img {
@@ -1593,7 +1611,7 @@ h2.price {
 .card-body .btn-comprar {
   padding-top: 1rem;
   display: flex;
-  padding-left: 7.5rem;
+  justify-content: center;
 }
 
 .card-body button {
@@ -1612,10 +1630,12 @@ h2.price {
 .card-body h3 {
   font-family: openSansBold;
   font-size: 30px;
+  padding-left: 1rem;
 }
 
 .card-body .card-text {
   font-family: openSansLight;
+  padding-left: 1rem;
 }
 
 .card-body .card-text h4 {
@@ -1672,9 +1692,8 @@ h2.price {
   .owl-carousel1.promocao-theme.owl-carousel.owl-theme
   .owl-wrapper-outer
   .owl-wrapper
-  .owl-item
-  .item {
-  padding-left: 2rem;
+  .owl-item {
+  width: initial;
 }
 
 .all
@@ -1683,8 +1702,10 @@ h2.price {
   .owl-carousel1.promocao-theme.owl-carousel.owl-theme
   .owl-wrapper-outer
   .owl-wrapper
-  .owl-item {
-  width: initial;
+  .owl-item
+  .item {
+  display: flex;
+  justify-content: space-around;
 }
 
 .all
@@ -1714,7 +1735,29 @@ h2.price {
   color: black;
   background-color: transparent;
   opacity: 1.5;
-  margin-right: -2.5rem;
+  margin-right: -1rem;
+}
+
+.all
+  .container
+  .yellow-block
+  .owl-carousel1.promocao-theme.owl-carousel.owl-theme
+  .owl-controls.clickable
+  .owl-buttons
+  .owl-next
+  img {
+  width: 3rem;
+}
+
+.all
+  .container
+  .yellow-block
+  .owl-carousel1.promocao-theme.owl-carousel.owl-theme
+  .owl-controls.clickable
+  .owl-buttons
+  .owl-prev
+  img {
+  width: 3rem;
 }
 
 .all
@@ -1728,6 +1771,7 @@ h2.price {
   background-color: transparent;
   opacity: 1.5;
   margin-left: -1rem;
+  width: 2rem;
 }
 
 .all
@@ -1739,6 +1783,7 @@ h2.price {
   display: flex;
   justify-content: space-between;
   margin-top: -24rem;
+  position: relative;
 }
 
 .btn-promocao {
@@ -1762,7 +1807,7 @@ h2.price {
   border-color: #000000;
   color: #000000;
 }
-
+///////////////////////////
 .destaque .card-white-risco {
   padding-top: 10rem;
 }
@@ -1795,16 +1840,13 @@ h2.price {
   margin: 6px auto 8px auto;
 }
 
-.destaque .white-block {
-  padding-left: 8rem;
-  padding-right: 8rem;
-  margin-top: 2rem;
+.container .white-block {
+  padding-top: 8rem;
   border-radius: 10px;
-  height: 38.5rem;
 }
 
 .destaque .btn-destaque {
-  padding-top: 20rem;
+  padding-top: 6rem;
   display: flex;
   justify-content: center;
   padding-bottom: 3rem;
@@ -1837,12 +1879,17 @@ h2.price {
 }
 
 .all
-  .destaque
+  .container
   .white-block
   .owl-carousel2.destaque-theme
   .owl-wrapper-outer
   .owl-wrapper {
   display: flex !important;
+  width: 290px;
+}
+
+.all .container .white-block {
+  width: 100%;
 }
 
 .all
@@ -1867,9 +1914,178 @@ h2.price {
   margin-top: -30rem;
 }
 
-/*.owl-carousel1 .owl-wrapper-outer .owl-wrapper .owl-item {
-  width: auto;
-}*/
+.all
+  .destaque
+  .white-block
+  .owl-carousel2.destaque-theme.owl-carousel.owl-theme
+  .owl-controls.clickable
+  .owl-buttons
+  .owl-prev,
+.all
+  .destaque
+  .white-block
+  .owl-carousel2.destaque-theme.owl-carousel.owl-theme
+  .owl-controls.clickable
+  .owl-buttons
+  .owl-next {
+  position: relative;
+}
+
+/*Estilo para tablets*/
+@media only screen and (min-width: 788px) and (max-width: 979px) {
+  .about-us .container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .all
+    .container
+    .yellow-block
+    .owl-carousel1.promocao-theme.owl-carousel.owl-theme
+    .owl-wrapper-outer
+    .owl-wrapper
+    .owl-item
+    .item
+    .card-deck
+    .card
+    .img-produto
+    img {
+    max-width: 16rem;
+  }
+
+  .card-deck img {
+    width: 16rem;
+  }
+
+  .all .about-us .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .all .about-us .container img {
+    display: none;
+  }
+
+  .destaque .btn-destaque {
+    padding-top: 3rem;
+  }
+
+  .yellow-block {
+    height: 56rem;
+  }
+
+  .all
+    .container
+    .yellow-block
+    .owl-carousel1.promocao-theme.owl-carousel.owl-theme
+    .owl-controls
+    .owl-buttons
+    .owl-next
+    img {
+    display: none;
+  }
+
+  .all
+    .container
+    .yellow-block
+    .owl-carousel1.promocao-theme.owl-carousel.owl-theme
+    .owl-controls
+    .owl-buttons
+    .owl-prev
+    img {
+    display: none;
+  }
+}
+
+/*Estilo para smartphone*/
+@media only screen and (max-width: 787px) {
+  .shop-steps {
+    flex-wrap: wrap;
+  }
+
+  .about-us .container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .all
+    .container
+    .yellow-block
+    .owl-carousel1.promocao-theme.owl-carousel.owl-theme
+    .owl-wrapper-outer
+    .owl-wrapper
+    .owl-item
+    .item
+    .card-deck
+    .card
+    .img-produto
+    img {
+    max-width: 16rem;
+  }
+
+  .all
+    .destaque
+    .white-block
+    .owl-carousel2.destaque-theme.owl-carousel.owl-theme
+    .owl-wrapper-outer
+    .owl-wrapper
+    .owl-item
+    .card-deck
+    .card
+    .img-produto
+    img {
+    max-width: 16rem;
+  }
+
+  .all .about-us .container img {
+    display: none;
+  }
+
+  .all
+    .destaque
+    .white-block
+    .owl-carousel2.destaque-theme.owl-carousel.owl-theme
+    .owl-wrapper-outer
+    .owl-wrapper
+    .owl-item {
+    width: 0px;
+  }
+
+  .destaque .btn-destaque {
+    padding-top: 5rem;
+  }
+
+  .all
+    .container
+    .yellow-block
+    .owl-carousel1.promocao-theme.owl-carousel.owl-theme
+    .owl-controls
+    .owl-buttons
+    .owl-next
+    img {
+    display: none;
+  }
+
+  .all
+    .container
+    .yellow-block
+    .owl-carousel1.promocao-theme.owl-carousel.owl-theme
+    .owl-controls
+    .owl-buttons
+    .owl-prev
+    img {
+    display: none;
+  }
+
+  .all .destaque .btn-destaque {
+    padding-top: 6rem;
+  }
+
+  .yellow-block {
+    height: 63rem;
+  }
+}
+
 /*=====================================================*/
 
 /*----------- FOOTER* ---------------/*/
@@ -1883,8 +2099,10 @@ h2.price {
 }
 
 .recaptcha_el {
-  width: 209px;
-  height: 60px;
+}
+
+.recaptcha_el div {
+  max-width: 22rem !important;
 }
 
 .content-footer {
