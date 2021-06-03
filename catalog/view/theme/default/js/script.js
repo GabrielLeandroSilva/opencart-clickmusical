@@ -3,3 +3,5 @@ new SimpleSlide({
   time: 5000,
   nav:true,
 });
+
+

@@ -246,15 +246,33 @@ div.required .control-label:before {
 /* menu */
 .logo-click {
   z-index: 2;
-  position: relative;
-  top: 4rem;
+  top: -0.5rem;
+  left: 6rem;
+  position: absolute;
 }
+
+@media (max-width: 1000px) {
+  .logo-click {
+    position: relative;
+    top: auto;
+    left: auto;
+  }
+}
+
 #menu {
   margin-bottom: 0;
   display: flex;
   justify-content: center;
   align-items: baseline;
+  padding: 4rem;
 }
+
+@media (max-width: 1000px) {
+  #menu {
+    padding: 0;
+  }
+}
+
 #menu .nav > li > a {
   color: #fff;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
@@ -427,7 +445,7 @@ footer h5 {
 }
 /* breadcrumb */
 .breadcrumb {
-  margin: 0 0 20px 0;
+  margin: 4rem 0 20px 0;
   padding: 8px 0;
   border: 1px solid #ddd;
   background: rgb(80, 80, 80);
@@ -937,7 +955,7 @@ h2.price {
 
 .navbar img {
   margin: 1rem;
-  width: 21rem;
+  width: 23rem;
 }
 
 .faixa-nav {
@@ -956,6 +974,10 @@ h2.price {
 @media (max-width: 800px) {
   .navbar .nav-item .nav-link {
     padding-top: 1rem;
+  }
+
+  .navbar img {
+    width: 18rem;
   }
 }
 /*==========================================*/
@@ -2118,6 +2140,7 @@ h2.price {
 
 .recaptcha_el div {
   max-width: 22rem !important;
+  max-height: 6rem;
 }
 
 .content-footer {
@@ -2128,8 +2151,12 @@ h2.price {
   padding-bottom: 1.5rem;
 }
 
+.logo-footer {
+  margin-bottom: 1rem;
+}
+
 .logo-footer img{
-  width: 8rem;
+  width: 15rem;
 }
 
 .links-footer {
@@ -2203,7 +2230,6 @@ h2.price {
 .card-payment {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .card-payment .elo-area {
@@ -2224,6 +2250,10 @@ h2.price {
   cursor: pointer;
 }
 
+.card-payment .visa-area {
+  margin-right: 0.3rem;
+}
+
 .card-payment .visa-area img {
   width: 3rem;
   cursor: pointer;
@@ -2233,6 +2263,8 @@ h2.price {
   background-color: white;
   border-radius: 0.3rem;
   padding: 0.2rem;
+  cursor: pointer;
+  margin-right: 0.3rem;
 }
 
 .card-payment .mercado-area {
@@ -2251,6 +2283,7 @@ h2.price {
 
 .card-payment .first-content {
   display: flex;
+  align-items: baseline;
 }
 
 .card-payment .second-content {
@@ -2308,6 +2341,7 @@ h2.price {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 1rem;
 }
 
 .social .social-icons {
@@ -2439,4 +2473,148 @@ h2.price {
 .content-information-Sending {
   text-align: justify;
   margin-bottom: 2rem;
+}
+
+
+/*-----------------Whatsapp--------------*/
+
+.whatsapp-button {
+  position: fixed;
+  bottom: 30px;
+  right: -124px;
+  display: block;
+  z-index: 3000;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -ms-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.whatsapp-button a {
+  border: none;
+  background-color: transparent;
+  background: #25d366;
+  color: #fff;
+  font-size: 30px;
+  height: 45px;
+  width: 45px;
+  text-align: center;
+  line-height: 45px;
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  z-index: 300;
+  -webkit-box-shadow: 4px 5px 10px -1px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 4px 5px 10px -1px rgba(0, 0, 0, 0.5);
+  -ms-box-shadow: 4px 5px 10px -1px rgba(0, 0, 0, 0.5);
+  -o-box-shadow: 4px 5px 10px -1px rgba(0, 0, 0, 0.5);
+  box-shadow: 4px 5px 10px -1px rgba(0, 0, 0, 0.5);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+}
+.whatsapp-button a .fa {
+  color: #fff !important;
+  font-size: 100%;
+}
+.whatsapp-button span {
+  width: 150px;
+  height: 35px;
+  padding-top: 5px;
+  padding-right: 5px;
+  position: relative;
+  background-color: #128c7e;
+  display: inline-block;
+  text-align: center;
+  padding-left: 32px;
+  color: #fff;
+  font-size: 14px;
+  z-index: 200;
+}
+.whatsapp-button:hover {
+  right: 0;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+@media (max-width: 1200px) {
+  .whatsapp-button {
+    display: none;
+  }
+}
+
+
+/*------------------Cookie-----------*/
+
+.cookies-background {
+  display: none;
+  position: fixed;
+  z-index: 19999;
+  height: 100%;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+.cookies-background .cookies {
+  display: block;
+  position: absolute;
+  left: 25px;
+  bottom: 25px;
+  background-color: #000;
+  width: 100%;
+  max-width: 320px;
+  padding: 25px;
+  color: #fff;
+  z-index: 20000;
+  -webkit-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -o-border-radius: 12px;
+  border-radius: 12px;
+  -webkit-box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+  -ms-box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+  -o-box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+}
+
+.cookies-background .cookies h4 {
+  color: #f0af13;
+}
+@media (max-width: 767px) {
+  .cookies-background .cookies {
+    max-width: 100%;
+    left: 0;
+    bottom: 0;
+    -webkit-border-radius: 0;
+    -ms-border-radius: 0;
+    -moz-border-radius: 0;
+    -o-border-radius: 0;
+    border-radius: 0;
+    -webkit-box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.25);
+    -ms-box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.25);
+    -o-box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.25);
+  }
+}
+.cookies-background:before {
+  content: "";
+  background-color: #1c1c1c;
+  opacity: 0.75;
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  bottom: 0;
+  left: 0;
 }

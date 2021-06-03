@@ -51,29 +51,20 @@
           </div>
         </div>
 
-        <div class="card-payment">
-          <div class="first-content d-flex">
-            <div class="elo-area d-flex justify-content-center align-items-center">
-              <img src="catalog/view/theme/default/image/elo-logo.png" alt="logo-elo">
-            </div>
-            <div class="master-card-area d-flex justify-content-center align-items-center">
-              <img src="catalog/view/theme/default/image/Master-Card-icon.png" alt="logo-master-card">
-            </div>
-            <div class="visa-area d-flex justify-content-center align-items-center">
-              <img src="catalog/view/theme/default/image/visa.png" alt="logo-visa">
-            </div>
+
+        <div class="social">
+          <div class="social-icons">
+            <img onclick="window.open('https://www.google.com.br/')" src="catalog/view/theme/default/image/logo-facebook.svg" alt="icon-facebook">
           </div>
-          <div class="second-content d-flex">
-            <div class="mercado-area d-flex justify-content-center align-items-center">
-              <div class="background-mercado">
-                <img src="catalog/view/theme/default/image/mercado-pago-logo.png" alt="logo-mercado-pago">
-              </div>
-            </div>
-            <div class="boleto-area d-flex justify-content-center align-items-center">
-              <img src="catalog/view/theme/default/image/boleto-logo.png" alt="logo-boleto">
-            </div>
+          <div class="social-icons">
+            <img onclick="window.open('https://www.google.com.br/')" src="catalog/view/theme/default/image/logo-whatsapp.svg" alt="icon-whatsapp">
+          </div>
+          <div class="social-icons">
+            <img onclick="window.open('https://www.google.com.br/')" src="catalog/view/theme/default/image/logo-instagram.svg" alt="icon-instagram">
           </div>
         </div>
+
+        
       </div>
 
       <div class="newsletter">
@@ -93,16 +84,28 @@
         </div>
         
 
-        <div class="social">
-          <div class="social-icons">
-            <img onclick="window.open('https://www.google.com.br/')" src="catalog/view/theme/default/image/logo-facebook.svg" alt="icon-facebook">
+        <div class="card-payment">
+          <div class="first-content d-flex">
+            <div class="elo-area d-flex justify-content-center align-items-center">
+              <img src="catalog/view/theme/default/image/elo-logo.png" alt="logo-elo">
+            </div>
+            <div class="master-card-area d-flex justify-content-center align-items-center">
+              <img src="catalog/view/theme/default/image/Master-Card-icon.png" alt="logo-master-card">
+            </div>
+            <div class="visa-area d-flex justify-content-center align-items-center">
+              <img src="catalog/view/theme/default/image/visa.png" alt="logo-visa">
+            </div>
+            <div class="mercado-area d-flex justify-content-center align-items-center">
+              <div class="background-mercado">
+                <img src="catalog/view/theme/default/image/mercado-pago-logo.png" alt="logo-mercado-pago">
+              </div>
+            </div>
+            <div class="boleto-area d-flex justify-content-center align-items-center">
+              <img src="catalog/view/theme/default/image/boleto-logo.png" alt="logo-boleto">
+            </div>
           </div>
-          <div class="social-icons">
-            <img onclick="window.open('https://www.google.com.br/')" src="catalog/view/theme/default/image/logo-whatsapp.svg" alt="icon-whatsapp">
-          </div>
-          <div class="social-icons">
-            <img onclick="window.open('https://www.google.com.br/')" src="catalog/view/theme/default/image/logo-instagram.svg" alt="icon-instagram">
-          </div>
+          
+          
         </div>
       </div>
 
@@ -114,6 +117,50 @@
 
   </div>
 </footer>
+
+<div class="whatsapp-button">
+  <a href="http://api.whatsapp.com/send?1=pt_BR&phone=15999999999&text=Olá!%20Eu%20gostaria%20de%20um%20orçamento." target="_blank"><i class="fa fa-whatsapp"></i></a>
+  <span>Entre em contato</span>
+</div>
+
+<section class="cookies-background">
+  <div class="cookies">
+    <h4>Este site usa cookies.</h4>
+    <p>
+      Usamos cookies para analisar o tráfego do site e otimizar sua experiência nele. Ao aceitar nosso uso de cookies, seus dados serão agregados com os dados de todos os demais usuários. 
+    </p>
+    <button type="button" class="btn btn-primary dismiss-cookies">Aceitar</button>
+  </div>
+</section>
+
 </body>
 
 </html>
+
+<script>
+  /**
+   * Aceite Cookies
+   */
+ if ($('.cookies-background').length) {
+  $(document).on('click', '.cookies .dismiss-cookies', function(event) {
+    event.preventDefault();
+    $('.cookies-background').fadeOut('500', function() {
+      $('.cookies-background').remove();
+    });
+  });
+}
+
+window.onload = function() {
+    if ($('.cookies-background').length) {
+        setTimeout(function(){
+            $('.cookies-background').fadeIn('500');
+        }, 1500);
+    }
+
+    $('.loader').fadeOut(300, function() {
+        if ($('.wow').length) {
+            new WOW().init();
+        }
+    },0);
+}
+</script>
