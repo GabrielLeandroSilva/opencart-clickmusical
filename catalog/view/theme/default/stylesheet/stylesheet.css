@@ -244,11 +244,16 @@ div.required .control-label:before {
   margin: 20px 0;
 }
 /* menu */
+.logo-click {
+  z-index: 2;
+  position: relative;
+  top: 4rem;
+}
 #menu {
   margin-bottom: 0;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
+  justify-content: center;
+  align-items: baseline;
 }
 #menu .nav > li > a {
   color: #fff;
@@ -256,7 +261,7 @@ div.required .control-label:before {
   padding: 10px 15px 10px 15px;
   min-height: 15px;
   background-color: transparent;
-  font-size: 15px;
+  font-size: 21px;
 }
 #menu .nav > li > a:hover,
 #menu .nav > li.open > a {
@@ -932,7 +937,7 @@ h2.price {
 
 .navbar img {
   margin: 1rem;
-  width: 12rem;
+  width: 21rem;
 }
 
 .faixa-nav {
@@ -1468,6 +1473,7 @@ h2.price {
   align-items: center;
   padding-top: 1rem;
   padding-bottom: 3rem;
+  padding-left: 10rem;
 }
 
 .shop-steps h3 {
@@ -2000,7 +2006,16 @@ h2.price {
 /*Estilo para smartphone*/
 @media only screen and (max-width: 787px) {
   .shop-steps {
-    flex-wrap: wrap;
+    flex-wrap: initial;
+    padding-left: 0;
+  }
+
+  /*Estilo para smartphone*/
+  @media only screen and (max-width: 540px) {
+    .shop-steps {
+      flex-wrap: wrap;
+      padding-left: 0;
+    }
   }
 
   .about-us .container {
