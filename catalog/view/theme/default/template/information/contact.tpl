@@ -23,7 +23,7 @@
         <img src="catalog/view/theme/default/image/LogoClickMusical.png" alt="LogoClickMusical">
       </div>
       <div class="address">
-        <p>Endereço: R. Francisco Scarpa, 95 - Centro, Sorocaba - SP.</p>
+        <p onclick="window.open('https://www.google.com/maps/place/R.+Francisco+Scarpa,+95+-+Centro,+Sorocaba+-+SP,+18035-020/data=!4m2!3m1!1s0x94c58abb113ae6d9:0xd98c1f147648d522?sa=X&ved=2ahUKEwijiMLN2vvwAhVcGbkGHZC_Bl8Q8gEwAHoECAMQAQ', '_blank');">Endereço: R. Francisco Scarpa, 95 - Centro, Sorocaba - SP.</p>
       </div>
       <div class="cell-number">
         <p>(15) 3232-0502</p>
@@ -42,7 +42,7 @@
           <input type="email" placeholder="Email">
         </div>
         <div class="input-contact mb-3">
-          <label>Nome</label>
+          <label>Mensagem</label>
           <textarea class="message-input" rows="5" placeholder="Digite a mensagem..."></textarea>
         </div>
         <div class="button-send mb-3">

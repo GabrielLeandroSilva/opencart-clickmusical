@@ -1807,7 +1807,7 @@ h2.price {
   border-color: #000000;
   color: #000000;
 }
-///////////////////////////
+
 .destaque .card-white-risco {
   padding-top: 10rem;
 }
@@ -2113,6 +2113,10 @@ h2.price {
   padding-bottom: 1.5rem;
 }
 
+.logo-footer img{
+  width: 8rem;
+}
+
 .links-footer {
   display: flex;
   flex-direction: column;
@@ -2411,4 +2415,13 @@ h2.price {
 .form-group .background-cep .btn-cep {
   background-color: #333333;
   color: white;
+}
+
+
+/*======================================================*/
+
+/*----------------- Information sending --------------------*/
+.content-information-Sending {
+  text-align: justify;
+  margin-bottom: 2rem;
 }

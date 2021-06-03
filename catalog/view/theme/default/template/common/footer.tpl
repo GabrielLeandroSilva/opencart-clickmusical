@@ -22,11 +22,15 @@
   <div class="background-footer">
     <div class="content-footer">
 
+      <div class="logo-footer">
+        <img src="catalog/view/theme/default/image/LogoClickMusical.png" alt="LogoClickMusical">
+      </div>
+
       <div class="links-footer">
         <span onclick="location.href='index.php?route=information/information&information_id=4';">Quem Somos</span>
-        <span>Informações de Entrega</span>
-        <span>Políticas de Privacidade</span>
-        <span>Termos e Condições</span>
+        <span onclick="location.href='index.php?route=common/informationSending'">Informações de Entrega</span>
+        <span onclick="location.href='index.php?route=common/privacyPolicies'">Políticas de Privacidade</span>
+        <span onclick="location.href='index.php?route=common/termsConditions'">Termos e Condições</span>
       </div>
 
       <div class="address">
