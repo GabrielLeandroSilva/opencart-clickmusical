@@ -118,6 +118,16 @@
             </li>
             <li><a href="index.php?route=common/blog">Blog</a></li>
             <li><a href="<?php echo $contact; ?>">Contato</a></li>
+            <li>
+              <div class="search-area">
+                <div id="search" class="input-group">
+                  <input id="input-search" type="text" name="search" class="form-control" placeholder="Digite aqui o que procura..." aria-label="Buscar" aria-describedby="basic-addon2">
+                  <div class="input-group-append">
+                    <button id="button-search" class="btn btn-search" type="button">Buscar</button>
+                  </div>
+                </div>
+              </div>
+            </li>
           </ul>
         </div>
       </nav>

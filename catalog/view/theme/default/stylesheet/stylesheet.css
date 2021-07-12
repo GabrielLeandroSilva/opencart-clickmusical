@@ -267,6 +267,30 @@ div.required .control-label:before {
   padding: 4rem;
 }
 
+.search-area {
+  align-self: center;
+}
+
+.search-area .input-group {
+    margin-bottom: 0 !important;
+    display: flex;
+    align-items: center;
+}
+.search-area .input-group input {
+      border-radius: 0;
+}
+.search-area .input-group button {
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: none;
+  border: none;
+  padding: 8px 15px;
+  background-color: #f0af13;
+  color: white;
+}
+
+
 @media (max-width: 1000px) {
   #menu {
     padding: 0;
