@@ -251,7 +251,7 @@ div.required .control-label:before {
   position: absolute;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   .logo-click {
     position: relative;
     top: auto;

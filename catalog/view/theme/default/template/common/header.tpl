@@ -121,7 +121,7 @@
             <li>
               <div class="search-area">
                 <div id="search" class="input-group">
-                  <input id="input-search" type="text" name="search" class="form-control" placeholder="Digite aqui o que procura..." aria-label="Buscar" aria-describedby="basic-addon2">
+                  <input id="input-search" type="text" name="search" class="form-control" placeholder="Digite o que procura..." aria-label="Buscar" aria-describedby="basic-addon2">
                   <div class="input-group-append">
                     <button id="button-search" class="btn btn-search" type="button">Buscar</button>
                   </div>
